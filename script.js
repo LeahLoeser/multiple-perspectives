@@ -1,8 +1,8 @@
-// canvas
+// call canvas
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 
-// room colors
+// define colors
 const teal = 'rgba(5, 172, 175, 0.2)';
 const blue = 'rgba(41, 171, 226, 0.2)';
 const green = 'rgba(146, 149, 57, 0.2)';
@@ -15,7 +15,7 @@ function redirectToPage(pageURL) {
     window.location.href = pageURL;
 }
 
-// rooms
+// define rooms
 const bedroom = {
     color: teal,
     coordinates: { x: 0, y: 2, width: 420, height: 524 },
@@ -25,37 +25,37 @@ const bedroom = {
 const livingroom = {
     color: blue,
     coordinates: { x: 291, y: 2, width: 384, height: 524 },
-    link: '/pages/livingroom.html'
+    link: 'pages/livingroom.html'
 };
 
 const office = {
     color: green,
     coordinates: { x: 499, y: 2, width: 299, height: 317 },
-    link: '/pages/office.html'
+    link: 'pages/office.html'
 };
 
 const closet = {
     color: orange,
     coordinates: { x: 0, y: 526, width: 390, height: 247 },
-    link: '/pages/closet.html'
+    link: 'pages/closet.html'
 };
 
 const yoga = {
     color: rose,
     coordinates: { x: 262, y: 515, width: 537, height: 198 },
-    link: '/pages/yoga.html'
+    link: 'pages/yoga.html'
 };
 
 const repair = {
     color: purple,
     coordinates: { x: 441, y: 351, width: 260, height: 413 },
-    link: '/pages/repair.html'
+    link: 'pages/repair.html'
 };
 
 const vanity = {
     color: pink,
     coordinates: { x: 724, y: 321, width: 75, height: 194 },
-    link: '/pages/vanity.html'
+    link: 'pages/vanity.html'
 };
 
 // const vanity = [
@@ -63,6 +63,7 @@ const vanity = {
 //     ctx.fillRect(724, 321, 75, 194)
 // ];
 
+// function for drawing rooms
 function drawRoom(room) {
     ctx.fillStyle = room.color;
     ctx.fillRect(room.coordinates.x, room.coordinates.y, room.coordinates.width, room.coordinates.height);
@@ -72,7 +73,7 @@ function handleCanvasClick(event) {
     const x = event.clientX - c.getBoundingClientRect().left;
     const y = event.clientY - c.getBoundingClientRect().top;
 
-    // Check which room was clicked
+    // check which room was clicked
     if (
         x >= bedroom.coordinates.x &&
         x <= bedroom.coordinates.x + bedroom.coordinates.width &&
@@ -123,12 +124,11 @@ function handleCanvasClick(event) {
     ) {
         redirectToPage(vanity.link);
     } else {
-        // If none of the rooms were clicked, do nothing
+        // if none of the rooms were clicked, do nothing
     }
 }
 
-
-// Draw all rooms
+// draw all rooms
 drawRoom(bedroom);
 drawRoom(livingroom);
 drawRoom(office);
@@ -136,7 +136,6 @@ drawRoom(closet);
 drawRoom(yoga);
 drawRoom(repair);
 drawRoom(vanity);
-// Draw other rooms
 
-// Add click event listener to the canvas
+// add click event listener to the canvas
 c.addEventListener('click', handleCanvasClick);
