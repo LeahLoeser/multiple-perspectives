@@ -19,7 +19,7 @@ function redirectToPage(pageURL) {
 const bedroom = {
     color: teal,
     coordinates: { x: 0, y: 2, width: 420, height: 524 },
-    link: '/pages/bedroom.html'
+    link: 'pages/bedroom.html'
 };
 
 const livingroom = {
