@@ -1,6 +1,8 @@
+// canvas
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 
+// room colors
 const teal = 'rgba(5, 172, 175, 0.2)';
 const blue = 'rgba(41, 171, 226, 0.2)';
 const green = 'rgba(146, 149, 57, 0.2)';
@@ -13,6 +15,7 @@ function redirectToPage(pageURL) {
     window.location.href = pageURL;
 }
 
+// rooms
 const bedroom = {
     color: teal,
     coordinates: { x: 0, y: 2, width: 420, height: 524 },
@@ -120,7 +123,7 @@ function handleCanvasClick(event) {
     ) {
         redirectToPage(vanity.link);
     } else {
-        // If none of the rooms were clicked, do something else or do nothing
+        // If none of the rooms were clicked, do nothing
     }
 }
 
