@@ -11,6 +11,7 @@ const rose = 'rgba(149, 12, 136, 0.2)';
 const purple = 'rgba(0, 19, 226, 0.2)';
 const pink = 'rgba(255, 0, 255, 0.2)';
 
+// function for loading rooms
 function redirectToPage(pageURL) {
     window.location.href = pageURL;
 }
@@ -69,6 +70,7 @@ function drawRoom(room) {
     ctx.fillRect(room.coordinates.x, room.coordinates.y, room.coordinates.width, room.coordinates.height);
 }
 
+// function for room selection
 function handleCanvasClick(event) {
     const x = event.clientX - c.getBoundingClientRect().left;
     const y = event.clientY - c.getBoundingClientRect().top;
