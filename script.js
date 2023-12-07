@@ -20,43 +20,43 @@ function redirectToPage(pageURL) {
 const bedroom = {
     color: teal,
     coordinates: { x: 0, y: 2, width: 420, height: 524 },
-    link: 'pages/bedroom.html'
+    link: 'bedroom.html'
 };
 
 const livingroom = {
     color: blue,
     coordinates: { x: 291, y: 2, width: 384, height: 524 },
-    link: 'pages/livingroom.html'
+    link: 'livingroom.html'
 };
 
 const office = {
     color: green,
     coordinates: { x: 499, y: 2, width: 299, height: 317 },
-    link: 'pages/office.html'
+    link: 'office.html'
 };
 
 const closet = {
     color: orange,
     coordinates: { x: 0, y: 526, width: 390, height: 247 },
-    link: 'pages/closet.html'
+    link: 'closet.html'
 };
 
 const yoga = {
     color: rose,
     coordinates: { x: 262, y: 515, width: 537, height: 198 },
-    link: 'pages/yoga.html'
+    link: 'yoga.html'
 };
 
 const repair = {
     color: purple,
     coordinates: { x: 441, y: 351, width: 260, height: 413 },
-    link: 'pages/repair.html'
+    link: 'repair.html'
 };
 
 const vanity = {
     color: pink,
     coordinates: { x: 724, y: 321, width: 75, height: 194 },
-    link: 'pages/vanity.html'
+    link: 'vanity.html'
 };
 
 // const vanity = [
