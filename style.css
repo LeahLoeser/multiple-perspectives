@@ -1,0 +1,36 @@
+header {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin-left: 30px;
+}
+
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#myImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
